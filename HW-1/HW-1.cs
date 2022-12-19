@@ -1,4 +1,5 @@
-﻿/* Задача 2: Напишите программу, которая на вход принимает 
+﻿
+/* Задача 2: Напишите программу, которая на вход принимает 
 два числа и выдает, какое число большее, а какое меньшее.
 */ 
 
@@ -94,14 +95,27 @@ Console.ReadLine();                                             // Очищае�
 
 Console.Clear();
 
-System.Console.Write("Введите положительное число больше 1: ");
+Console.Write("Введите любое целое число : ");
 
-NumberA = Convert.ToInt32 (Console.ReadLine());
-
-NumberB = 2;
-System.Console.WriteLine($"Ряд чётных чисел от 1 до {NumberA}: ");
-while (NumberB <= NumberA)
+NumberA = Convert.ToInt32(Console.ReadLine());
+NumberC = NumberA + Math.Sign(NumberA);
+NumberB = 1;
+Console.WriteLine($"Ряд чётных чисел от 1 до {NumberA}: ");
+while (NumberB < NumberC || NumberB > NumberC)
 {
-    System.Console.Write(NumberB + " ");
-    NumberB +=2;
+    if ((NumberB % 2) == 0)
+    {
+        Console.Write(NumberB + " ");
+    }
+    
+    NumberB = NumberB + Math.Sign(NumberA);
+
+    if (NumberA == 0)
+    {
+        Console.WriteLine("0");
+        NumberB = 0;
+        break;
+    }
 }
+System.Console.WriteLine("Для продолжения нажмите Enter ...");  // Переходим к следующей задаче
+Console.ReadLine();                                             // Очищаем экран
