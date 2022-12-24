@@ -28,7 +28,7 @@ if (numLen < 3)
 }
 else 
 {
-    double result = Math.Truncate((num / Math.Pow(10, numLen - 3)) % Math.Pow(10, (numLen - (numLen - 1)))); 
+    double result = Math.Truncate((num / Math.Pow(10, numLen - 3)) % 10);
     Console.WriteLine(Math.Abs(result));
 }
 
