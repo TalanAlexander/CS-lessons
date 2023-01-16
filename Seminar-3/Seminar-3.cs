@@ -3,7 +3,7 @@
 
 Console.Clear();
 Console.WriteLine("Введите номер четверти: ");
-int quarter = int.Parse(Console.ReadLine());
+int quarter = int.Parse(Console.ReadLine() ?? "");
 
 if (quarter == 1)
 {
@@ -38,7 +38,7 @@ Console.ReadLine();
 
 Console.Clear();
 Console.Write("Введите номер четверти: ");
-quarter = int.Parse(Console.ReadLine());
+quarter = int.Parse(Console.ReadLine() ?? "");
 
 switch (quarter)
 {
@@ -79,7 +79,7 @@ Console.ReadLine();
 
 Console.Clear();
 Console.Write("Введите число N: ");
-int N = int.Parse(Console.ReadLine());
+int N = int.Parse(Console.ReadLine() ?? "");
 
 for(int i = 1; i <= N; i++)
 {
@@ -93,13 +93,13 @@ Console.ReadLine();
 
 Console.Clear();
 Console.Write("Введите X1: ");
-int x1=int.Parse(Console.ReadLine());
+int x1=int.Parse(Console.ReadLine() ?? "");
 Console.Write("Введите Y1: ");
-int y1=int.Parse(Console.ReadLine());
+int y1=int.Parse(Console.ReadLine() ?? "");
 Console.Write("Введите X2: ");
-int x2=int.Parse(Console.ReadLine());
+int x2=int.Parse(Console.ReadLine() ?? "");
 Console.Write("Введите Y2: ");
-int y2=int.Parse(Console.ReadLine());
+int y2=int.Parse(Console.ReadLine() ?? "");
 
 double d = Math.Sqrt(Math.Pow(x1-x2, 2) + Math.Pow(y1-y2, 2));
 

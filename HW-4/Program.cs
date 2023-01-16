@@ -6,9 +6,9 @@
 
 Console.Clear();
 System.Console.WriteLine("Введите число А: ");
-int numberA = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine() ?? "");
 System.Console.WriteLine("Введите число B: ");
-int numberB = int.Parse(Console.ReadLine());
+int numberB = int.Parse(Console.ReadLine() ?? "");
 
 System.Console.WriteLine("Число А={0} в степени В={1}, составляет: {2}", numberA, numberB, MatPow(numberA, numberB));
 System.Console.WriteLine("Нажмите Enter...");
@@ -34,7 +34,7 @@ int MatPow (int numA, int numB)
 
 Console.Clear();
 System.Console.WriteLine("Введите число А: ");
-int numberC = int.Parse(Console.ReadLine()); 
+int numberC = int.Parse(Console.ReadLine() ?? ""); 
 
 GetNumberSum(numberC);
 System.Console.WriteLine("Нажмите Enter...");
@@ -60,9 +60,9 @@ void GetNumberSum (int numC)
 */
 
 System.Console.WriteLine("Введите число элементов массива: ");
-int lenArray = int.Parse(Console.ReadLine());
+int lenArray = int.Parse(Console.ReadLine() ?? "");
 System.Console.WriteLine("Введите максимальное значение элемента: ");
-int numberE = int.Parse(Console.ReadLine());
+int numberE = int.Parse(Console.ReadLine() ?? "");
 
 int [] MyArray = new int [lenArray];
 

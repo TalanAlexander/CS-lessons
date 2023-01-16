@@ -12,7 +12,7 @@ while(true)
     try
     {
         System.Console.WriteLine("Введите номер дня: ");
-        value = int.Parse(Console.ReadLine());
+        value = int.Parse(Console.ReadLine() ?? "");
     }
     catch (Exception)
     {

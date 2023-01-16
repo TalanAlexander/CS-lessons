@@ -51,16 +51,16 @@ int returnQuarter(int a, int b)
 }
 
 Console.WriteLine("Введите координаты x: ");
-int x = Convert.ToInt32(Console.ReadLine());
+int x = Convert.ToInt32(Console.ReadLine() ?? "");
 Console.WriteLine("Введите координаты y: ");
-int y = Convert.ToInt32(Console.ReadLine());
+int y = Convert.ToInt32(Console.ReadLine() ?? "");
 
 
 
 printQuarter(x, y);
 
-// Console.WriteLine(returnQuarter(x, y));
+Console.WriteLine(returnQuarter(x, y));
 
-// int quarter = returnQuarter(x, y);
-// Console.WriteLine($"Четверть: {quarter}");
+int quarter = returnQuarter(x, y);
+Console.WriteLine($"Четверть: {quarter}");
 

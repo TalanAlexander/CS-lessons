@@ -12,7 +12,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите число: ");
-string numString = Console.ReadLine();
+string numString = Console.ReadLine() ?? "";
 int num = Convert.ToInt32(numString);
 
 int numLen = numString.Length;

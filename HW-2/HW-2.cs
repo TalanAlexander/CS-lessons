@@ -6,7 +6,7 @@ Console.Clear();
 
 Console.Write("Введите трёхзначное число: ");
 
-string numberString = Console.ReadLine();
+string numberString = Console.ReadLine() ?? "";
 
 string result = numberString.Substring(1,1);
 
@@ -22,7 +22,7 @@ Console.Clear();
 
 Console.Write("Введите трёхзначное число: ");
 
-string number2String = Console.ReadLine();
+string number2String = Console.ReadLine() ?? "";
 
 if (number2String.Length <= 2) 
 {

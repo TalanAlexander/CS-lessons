@@ -11,7 +11,7 @@
 Console.Clear();
 
 System.Console.Write("Введите пятизначное число: ");
-string i = System.Console.ReadLine();
+string i = System.Console.ReadLine() ?? "";
 int num = Convert.ToInt32(i);
 
 if (((num / 10000) == (num % 10)) && (((num / 1000) % 10) == ((num / 10) % 10)))
