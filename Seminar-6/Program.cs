@@ -3,7 +3,7 @@
 System.Console.WriteLine("ВВедите десятичное число: ");
 int value = int.Parse(Console.ReadLine()??"");
 
-int len = GetLenArray(value);
+int len = 0;
 
 
 
