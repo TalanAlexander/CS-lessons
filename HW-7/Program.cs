@@ -46,12 +46,12 @@ else
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.0
 
 Console.Write("Введите количество строк массива: ");
-int rows = int.Parse(Console.ReadLine()??"0");
+int rows1 = int.Parse(Console.ReadLine()??"0");
 
 Console.Write("Введите количество столбцов массива: ");
-int columns = int.Parse(Console.ReadLine()??"0");
+int columns1 = int.Parse(Console.ReadLine()??"0");
 
-int[,] array = GetIntArray(rows, columns, 0, 10);
+int[,] array = GetIntArray(rows1, columns1, 0, 10);
 PrintArray(array);
 double[] res = GetAverageColumns(array);
 PrintDoubleArray(res);
