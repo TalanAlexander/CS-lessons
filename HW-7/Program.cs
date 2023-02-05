@@ -25,7 +25,7 @@ PrintDoubleMatrix(array47);
 int[,] array50 = GetRandomIntArray();
 PrintArray(array50);
 System.Console.WriteLine("Введите номер колонки и строки, через запятую: ");
-int [] arrayPosition = GetArrayFromStrings(Console.ReadLine());
+int [] arrayPosition = GetArrayFromStrings(Console.ReadLine()??"0");
 
 if (arrayPosition[0] <= array50.GetLength(1) && arrayPosition[1] <= array50.GetLength(0))
 {
